@@ -33,10 +33,11 @@ public class FirstTest {
     } else {
       System.out.println("Test Failed");
     }
+
     // 4) Close browser
     // 1 method
-    // driver.close();
+    driver.close(); // Close browser manualy
     // 2. method
-    driver.quit();
+    // driver.quit(); //Close browser automatic
   }
 }
