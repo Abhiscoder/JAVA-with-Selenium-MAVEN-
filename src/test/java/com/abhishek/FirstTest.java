@@ -25,7 +25,7 @@ public class FirstTest {
     WebDriver driver = new ChromeDriver(); // Prefered
     // 2) Open URL https://www.flipkart.com/
     driver.get("https://www.flipkart.com/"); // object name (driver).get("<URL Link>") is use to open url.
-    // 3) Validate title should be "Your Store"
+    // 3) Validate title should be "Online Shopping India Mobile, Cameras, Lifestyle & more Online @ Flipkart.com"
     String actual_title = driver.getTitle();
     System.out.println("test" + actual_title);
     if (actual_title.equals("Online Shopping India Mobile, Cameras, Lifestyle & more Online @ Flipkart.com")) {
