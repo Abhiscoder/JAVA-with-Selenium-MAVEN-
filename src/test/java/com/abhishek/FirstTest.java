@@ -22,7 +22,7 @@ public class FirstTest {
     OR*/
     WebDriver driver = new ChromeDriver(); // Prefered
     // 2) Open URL https://demo.opencart.com/
-    driver.get("https://demo.opencart.com/");
+    driver.get("https://demo.opencart.com/"); // object name (driver).get("<URL Link>") is use to open url. 
 
   }
 }
