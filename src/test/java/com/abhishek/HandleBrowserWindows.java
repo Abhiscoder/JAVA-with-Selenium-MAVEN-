@@ -22,26 +22,25 @@ public class HandleBrowserWindows {
     Set<String> windowIDs = driver.getWindowHandles();
 
     // Apporach 1
-    /*
-     * List<String> windowList = new ArrayList<String>(windowIDs);
-     * 
-     * String parentID = windowList.get(0);
-     * String childID = windowList.get(1);
-     * 
-     * // Switch to child window
-     * driver.switchTo().window(childID);
-     * System.out.println(driver.getTitle());
-     * 
-     * // Switch to parent window
-     * driver.switchTo().window(parentID);
-     * System.out.println(driver.getTitle());
-     */
+
+    List<String> windowList = new ArrayList<String>(windowIDs);
+
+    String parentID = windowList.get(0);
+    String childID = windowList.get(1);
+
+    // Switch to child window
+    driver.switchTo().window(childID);
+    System.out.println(driver.getTitle());
+
+    // Switch to parent window
+    driver.switchTo().window(parentID);
+    System.out.println(driver.getTitle());
 
     // Approach 2
     for (String windId : windowIDs) {
-      String title =driver.switchTo().window(windId).getTitle();
+      String title = driver.switchTo().window(windId).getTitle();
       if (title.equals("OrnageHRM")) {
-        System.out.println(driver.getCurrentUrl()); //some validation on the parent window
+        System.out.println(driver.getCurrentUrl()); // some validation on the parent window
       }
     }
   }
