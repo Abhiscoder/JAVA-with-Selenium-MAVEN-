@@ -5,3 +5,4 @@
 4. https://money.rediff.com/gainers/bse/daily/groupa
 5. https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 6. https://the-internet.herokuapp.com/javascript_alerts
+7. https://ui.vision/demo/webtest/frames/
