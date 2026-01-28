@@ -3,6 +3,7 @@ package com.abhishek;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -34,7 +35,9 @@ public class Handlefrems {
     
     //Inner iframe - part of Frame3
     driver.switchTo().frame(0); //Switching to frame using index
-    driver.findElement(By.xpath("//div[@id='i9']//div[@class='AB7Lab Id5V1']")).click();
+    WebElement rdbutton =  driver.findElement(By.xpath("//div[@id='i9']//div[@class='AB7Lab Id5V1']"));
+    JavascriptExecutor js =(JavascriptExecutor) driver;
+    js.executeScript(("arguments[0].click();"), rdbutton);
     driver.switchTo().defaultContent();// go back to main page
     
   }
