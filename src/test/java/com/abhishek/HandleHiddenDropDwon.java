@@ -16,6 +16,7 @@ public class HandleHiddenDropDwon {
     driver.get("https://opensource-demo.orangehrmlive.com/web/index.php");
 
     // Login steps
+    // driver.findElement(By.name("username")).sendKeys("Admin");
     driver.findElement(By.name("username")).sendKeys("Admin");
     driver.findElement(By.name("password")).sendKeys("admin123");
     driver.findElement(By.xpath("//button[normalize-space()='Login']")).click();
