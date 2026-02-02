@@ -20,7 +20,7 @@ public class HandleHiddenDropDwon {
     driver.findElement(By.name("password")).sendKeys("admin123");
     driver.findElement(By.xpath("//button[normalize-space()='Login']")).click();
 
-    // Clicking on PIM
+    // Clicking on PIM  and performe action
     driver.findElement(By.xpath("//span[normalize-space()='PIM']")).click();
 
     // to be continue ... but I can't understand right now...
